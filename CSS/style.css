@@ -1,0 +1,461 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #FF9000;
+    font-family: 'Ubuntu', sans-serif;
+    height: auto;
+    /* font-family: 'Kaushan Script', cursive; */
+}
+
+/* Kaydırma çubuğu */
+::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    opacity: 0
+}
+
+#orangeHeader{
+    color: #FFF;
+    text-align: center;
+    margin-top: 580px;
+    font-size: 20px;
+}
+
+.icons i{
+    color: white;
+    position: relative;
+    left: 735px;
+    margin-left: 89.5px;
+    margin-top: 18px;
+    font-size: 28px;
+}
+
+#cbLogo{
+    text-align: center;
+    position: relative;
+    left: 765px;
+    bottom: 210px;
+}
+
+#footer{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    font-size: 22px;
+    position: relative;
+    top: 54px;
+}
+
+/* Menü */
+
+.menu > ul {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+    background-color: #FFF;
+    border-radius: 20px;
+    position: relative;
+    left: 865px;
+    bottom: 40px;
+}
+
+.menu > ul > li {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu > ul > li > a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 15px;
+    color: #333;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.menu > ul > li[data-dropdown] > a::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 5px;
+    color: #FF8000;
+    transition: 300ms all;
+    display: inline-block;
+}
+
+.menu ul .dropdown {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    padding-top: 10px;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 300ms all;
+}
+
+.menu ul .dropdown::before {
+    content: '';
+    border: 8px solid transparent;
+    border-bottom-color: #f5f5f5;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    margin-left: -12px;
+}
+
+.menu ul .dropdown ul {
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 8px 0;
+    list-style-type: none
+}
+
+.menu ul .dropdown ul li a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34px;
+    padding: 0 15px;
+    border-radius: 34px;
+    color: #555;
+    text-decoration: none;
+}
+
+.menu ul .dropdown ul li {
+    position: relative;
+    padding: 0 7px;
+}
+
+.menu ul .dropdown ul li:hover > a {
+    background: #FF8000;
+    color: #000;
+}
+
+.menu > ul > li:hover > a::after {
+    transform: rotate(270deg);
+}
+
+.menu > ul > li:hover > a {
+    background: #fff;
+}
+
+.menu > ul > li:hover > a + .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.menu ul .dropdown .dropdown {
+    left: 190px;
+    top: 0;
+    padding-left: 20px;
+    margin-left: 0;
+    padding-top: 0;
+}
+
+.menu ul .dropdown ul li:hover > .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.menu ul .dropdown .dropdown::before {
+    border-bottom-color: transparent;
+    border-right-color: #fff;
+    top: 10px;
+    left: 4px;
+    margin-left: 0;
+}
+
+.menu ul .dropdown li[data-dropdown] > a::after {
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin: 0px;
+    color: FF8000;
+    display: inline-block;
+    transition: 300ms all;
+    position: relative;
+    left: 25px;
+}
+
+.menu ul .dropdown li[data-dropdown]:hover > a::after {
+    transform: rotate(-180deg);
+}
+
+.menu.vertical {
+    width: 200px;
+    padding: 10px 0;
+}
+
+.menu.vertical > ul {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.menu.vertical > ul > li {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.menu.vertical > ul > li > a {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu.vertical > ul > li .dropdown {
+    left: 190px;
+    top: 10px;
+    padding-left: 20px;
+    margin-left: 0;
+    padding-top: 0;
+}
+
+.menu.vertical > ul > li .dropdown .dropdown {
+    top: 0;
+}
+
+.menu.vertical > ul > li .dropdown::before {
+    border-bottom-color: transparent;
+    border-right-color: #FF8000;
+    top: 10px;
+    left: 4px;
+    margin-left: 0;
+}
+
+.fakeMenu{
+    position: relative;
+    bottom: 1120px;
+    left: 865px;
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 70px;
+    border-radius: 150px;
+}
+
+/* Menü */
+
+/* Dark Mode */
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+    left: 1840px;
+    bottom: 785px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+/* SOCIAL PANEL CSS */
+
+#canb{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.alcaklik{
+    position: relative;
+    top: 10px;
+}
+
+.social-panel-container {
+	position: fixed;
+	right: -10px;
+	bottom: 90px;
+	transform: translateX(100%);
+	transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+	transform: translateX(-10px);
+
+}
+
+.social-panel {	
+	background-color: #fff;
+	border-radius: 16px;
+	border: 5px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Muli';
+	position: relative;
+	height: 169px;	
+	width: 370px;
+	max-width: calc(100% - 10px);
+}
+
+.social-panel p {
+	background-color: rgb(0, 0, 0);
+	border-radius: 0 0 10px 10px;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 2px 17px 6px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 235px;
+}
+
+.social-panel p i {
+	margin: 0 5px;
+}
+
+.social-panel p a {
+	color: #FF8000;
+	text-decoration: none;
+}
+
+.social-panel h4 {
+	margin: 20px 0;
+	color: #97A5CE;	
+	font-family: 'Muli';	
+	font-size: 14px;	
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.social-panel ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social-panel ul li {
+	margin: 0 10px;
+}
+
+.social-panel ul li a {
+	border: 1px solid #DCE1F2;
+	border-radius: 50%;
+	color: #001F61;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+	border-color: #FF6A00;
+	box-shadow: 0 9px 12px -9px #FF6A00;
+}
+
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #fff;
+	border: 2px solid #000;
+	box-shadow: 0 16px 22px -17px #000;
+	color: #000;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 15px;
+	right: 20px;
+	z-index: 999;
+}
+
+.floating-btn:hover {
+	background-color: #fff;
+	color: #001F61;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.floating-btn:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 480px) {
+
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+        
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
+
+
+.creby{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Dark Mode */
+

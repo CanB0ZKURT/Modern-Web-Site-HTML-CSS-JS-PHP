@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F2F2F2;
+    font-family: 'Ubuntu', sans-serif;
+    height: auto;
+    /* font-family: 'Kaushan Script', cursive; */
+}
+
+/* Kaydırma çubuğu */
+::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    opacity: 0
+}
+
+#whitePart{
+    text-align: center;
+    color: #464646;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    bottom: 10px;
+}
+
+#aboutMe{
+    position: relative;
+    top: 80px;
+    font-size: 35px;
+}
+
+#about{
+    text-align: center;
+    position: relative;
+    font-size: 90px;
+    color: #e0e0e0;
+    top: 150px;
+}
+
+
+#kimim{
+    color: #fb9818;
+}
+
+hr{
+    position: relative;
+    top: 100px;
+    width: 1000px;
+}
+
+#CanBOZKURT{
+    text-align: center;
+    color: #464646;
+    position: relative;
+    top: 180px;
+    left: -130px;
+}
+
+#hakkimda{
+    text-align: center;
+    color: #919191;
+    position: relative;
+    top: 200px;
+    left: 190px;
+    font-size: 18px;
+    margin-left: 5px;
+    width: 1725px;
+}
+
+#yamac{
+    position: relative;
+    left: -410px;
+    width: 300px;
+    height: 300px;
+    bottom: 290px;
+}
+
+#ase{
+    position: relative;
+    left: -529px;
+    bottom: 245px;
+}
+
+#can{
+    position: relative;
+    bottom: 120px;
+    left: 65px;
+    color: #fb9818;
+}
+
+#bozkurt{
+    position: relative;
+    bottom: 102px;
+    left: 92px;
+    color: #fb9818;
+}
+
+#gmail{
+    position: relative;
+    bottom: 84px;
+    left: 138px;
+    color: #fb9818;
+}
+
+#footer{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #FF8000;
+    color: white;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    font-size: 22px;
+    position: relative;
+    bottom: 190px;
+}
