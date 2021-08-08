@@ -1,3 +1,8 @@
+İletişim sayfasının CSS'i kendi kendine silinmiş garip bir şekilde düzenlemek istemedim uğraşmadım kendiniz ayarlarsınız.
+
+English : The CSS of the contact page was self-deleted in a weird way, I didn't bother to set it up.
+
+
 TR : XAMPP İndirip phpMyAdmin üzerinden sisteme düşen verileri kontrol edip düzenleyebilirsiniz aynı şekilde normal site üzerindende kontrol edebilirsiniz.
 
 English : You can download XAMPP and check and edit the data falling into the system via phpMyAdmin, and you can also control it through the normal site.
